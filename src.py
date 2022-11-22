@@ -10,8 +10,8 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
-def checkid(choice):
-    if choice in ('1', '2', '3', '4'):
+def checkid(id):
+    if id in ('1', '2', '3', '4'):
         return 1
     else:
         return 0
@@ -30,30 +30,23 @@ print("2.Subtração")
 print("3.Multiplicação")
 print("4.Dividir")
 
-while True:
-    try:
-        choice = input("Escolha entre (1/2/3/4): ")
-    except EOFError as e:
-        print(e)
+def calcgeral(id, num1, num2,continue):
+    
+    if checkid(id) == 1:
 
-    if checkid(choice) == 1:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        if id == '1':
+            return add(num1, num2)
 
-        if choice == '1':
-            print(add(num1, num2))
+        elif id == '2':
+            return subtract(num1, num2)
 
-        elif choice == '2':
-            print(subtract(num1, num2))
+        elif id == '3':
+            return multiply(num1, num2)
 
-        elif choice == '3':
-            print(multiply(num1, num2))
-
-        elif choice == '4':
-            print(divide(num1, num2))
+        elif id == '4':
+            return divide(num1, num2)
         
-        next_calculation = input("Continuar? (sim/nao): ")
-        if continuecalc(next_calculation) == 0 or continuecalc(next_calculation) == -1:
+        if continuecalc(continue) == 0 or continuecalc(continue) == -1:
           break
     
     else:

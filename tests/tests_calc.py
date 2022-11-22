@@ -32,3 +32,6 @@ def test_continuecalc:
     assert continuecalc("sim") == 1, "Deveria ser 1"
     assert continuecalc("nao") == 0, "Deveria ser 0"
     assert continuecalc("daada") == -1, "Deveria ser -1"
+
+def test_calcgeral:
+    assert calcgeral("1", 5, 8, 'nao') == 13, "Deveria ser 13" 
