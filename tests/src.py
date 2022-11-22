@@ -24,7 +24,7 @@ def continuecalc(respost):
     else:
         return -1
 
-def calcgeral(id, num1, num2, continue):
+def calcgeral(id, num1, num2, cont):
     
     if checkid(id) == 1:
 
@@ -40,7 +40,7 @@ def calcgeral(id, num1, num2, continue):
         elif id == '4':
             return divide(num1, num2)
         
-        if continuecalc(continue) == 0 or continuecalc(continue) == -1:
+        if continuecalc(cont) == 0 or continuecalc(cont) == -1:
           break
     
     else:
