@@ -31,7 +31,10 @@ print("3.Multiplicação")
 print("4.Dividir")
 
 while True:
-    choice = input("Escolha entre (1/2/3/4): ")
+    try:
+        choice = input("Escolha entre (1/2/3/4): ")
+    except EOFError as e:
+        print(e)
 
     if checkid(choice) == 1:
         num1 = float(input("Enter first number: "))
