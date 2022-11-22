@@ -41,7 +41,7 @@ def calcgeral(id, num1, num2, cont):
             return divide(num1, num2)
         
         if continuecalc(cont) == 0 or continuecalc(cont) == -1:
-          break
+          return 0
     
     else:
         print("Id nao reconhecido")
