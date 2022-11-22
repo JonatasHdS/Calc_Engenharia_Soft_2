@@ -1,3 +1,5 @@
+execfile("mylib.py")
+
 def test_soma:
     assert add(1,5) == 6, "Deveria ser 6"
     assert add(5,8) == 13, "Deveria ser 13"
