@@ -1,10 +1,10 @@
 import src
 
 def test_soma():
-    assert add(1,5) == 6, "Deveria ser 6"
-    assert add(5,8) == 13, "Deveria ser 13"
-    assert add(10,7) == 17, "Deveria ser 17"
-    assert add(20,54) == 74, "Deveria ser 74"
+    assert src.add(1,5) == 6, "Deveria ser 6"
+    assert src.add(5,8) == 13, "Deveria ser 13"
+    assert src.add(10,7) == 17, "Deveria ser 17"
+    assert src.add(20,54) == 74, "Deveria ser 74"
 
 def test_sub():
     assert subtract(12,7) == 5, "Deveria ser 5"
