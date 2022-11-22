@@ -24,13 +24,7 @@ def continuecalc(respost):
     else:
         return -1
 
-print("Selecione uma operacao.")
-print("1.Soma")
-print("2.Subtração")
-print("3.Multiplicação")
-print("4.Dividir")
-
-def calcgeral(id, num1, num2,continue):
+def calcgeral(id, num1, num2, continue):
     
     if checkid(id) == 1:
 
