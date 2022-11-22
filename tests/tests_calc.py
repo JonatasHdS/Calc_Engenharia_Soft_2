@@ -1,4 +1,4 @@
-execfile("mylib.py")
+import src
 
 def test_soma():
     assert add(1,5) == 6, "Deveria ser 6"
