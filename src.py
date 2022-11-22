@@ -27,7 +27,6 @@ def continuecalc(respost):
 def calcgeral(id, num1, num2, cont):
     
     if checkid(id) == 1:
-
         if id == '1':
             return add(num1, num2)
 
